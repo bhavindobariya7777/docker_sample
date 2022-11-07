@@ -1,0 +1,8 @@
+services:
+  node-api:
+      build:
+        context: ./node
+        dockerfile: Dockerfile
+      image: node-api-img:1.0.0
+      ports:
+        - "7777:7777"
